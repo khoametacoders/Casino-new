@@ -58,22 +58,67 @@
 
     <div class="header">
       <div class="container">
-        <div class="container-has-login-header">
-          <a class="main-text" href="wallet.html"
-            >Wallet <span>9,999,999 won</span></a
-          >
-          <p>In games <span>88,888,888 won</span></p>
-          <a href="note.html">Note <span>(0)</span></a>
-        </div>
         <div class="header-bottom">
+          <div class="header-bottom-area align-items-center">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="./assets/images/logo-2.png" alt="logo"
+              /></a>
+            </div>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="live-casino.html">LIVE CASINO</a></li>
+              <li><a href="slot.html">SLOT</a></li>
+              <li><a href="deposit.html">DEPOSIT APPLICANT</a></li>
+              <li><a href="withdraw.html">WITHDRAW REQUEST</a></li>
+              <li><a href="customer-center.html">CUSTOMER CENTER</a></li>
+              <li><a href="notice.html">NOTICE</a></li>
+              <!-- <li><a href="sign-in.html">SIGN IN</a></li>
+              <li><a href="sign-up.html">SIGN UP</a></li> -->
+            </ul>
+            <div class="d-flex" style="margin-top: 10px">
+              <a href="sign-in.html" class="d-none d-sm-block btn-outline"
+                >Sign In</a
+              >
+              <a href="sign-up.html" class="d-none d-sm-block btn-pink"
+                >Sign Up</a
+              >
+            </div>
 
+            <div
+              class="header-trigger-wrapper d-flex d-lg-none align-items-center"
+            >
+              <div class="header-trigger me-4">
+                <span></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="main-page pt-5 layout-2 position-relative">
+    <div class="main-page pt-5 layout-2 position-relative deposit">
         <div class="mx-auto">
-            <div class="title-box">
-                <h4 class="title-text">deposit applicant</h4>
+            <div class="title-box pt-5">
+                <svg width="241" height="9" viewBox="0 0 241 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="240" height="8" transform="matrix(-1 0 0 1 240.5 0.5)" fill="url(#paint0_linear_2479_15584)"/>
+                <defs>
+                <linearGradient id="paint0_linear_2479_15584" x1="-3.91156e-07" y1="4" x2="240" y2="3.99998" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F82F77"/>
+                <stop offset="1" stop-color="#F82F77" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>
+                <h4 class="title-text">withdraw request</h4>
+                <svg width="241" height="9" viewBox="0 0 241 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="240" height="8" fill="url(#paint0_linear_2479_15586)"/>
+                <defs>
+                <linearGradient id="paint0_linear_2479_15586" x1="0.5" y1="4.5" x2="240.5" y2="4.49998" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F82F77"/>
+                <stop offset="1" stop-color="#F82F77" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>
+
             </div>
             <div class="content-box">
                 <div class="game-details-right mx-auto" style="max-width: 710px;">
@@ -133,8 +178,8 @@
                   </div>
                 </div>
 
-                <div class="submit-box d-flex mb-4" style="column-gap: 25px">
-                    <button class="btn btn-outline-primary text-nowrap" type="button">Account inquiry</button>
+                <div class="submit-box d-block d-sm-flex mb-4" style="column-gap: 25px">
+                    
                     <div class="text-center active w-100 text-center btn btn-primary" id="submit-deposit">
                         Deposit Applicant
                     </div>
@@ -153,71 +198,40 @@
             </div>
             </div>
         </div>
-        <div class="position-absolute" style="bottom:0;left: 0;">
+        <div class="position-absolute pv-top-footer" style="bottom:0;left: 0;">
             <img style="width: calc((100vw - 710px) / 2);max-width: 380px;" src="assets/images/deposit.png" alt="">
         </div>
     </div>
 
-     <!-- Footer Section Starts Here -->
-    <footer
-      class="footer-section bg_img"
-      style="background: url(assets/images/footer/bg.jpg) center"
-    >
+  <footer class="footer-section bg_img" style="background: url(assets/images/footer/bg.jpg) center">
       <div class="footer-top">
         <div class="container">
-          <div
-            class="footer-wrapper d-flex flex-wrap align-items-center justify-content-md-between justify-content-center"
-          >
+          <div class="footer-wrapper d-flex flex-wrap align-items-center justify-content-md-between justify-content-center">
             <div class="logo mb-3 mb-md-0">
-              <a href="index.html"
-                ><img src="assets/images/logo.png" alt="logo"
-              /></a>
+              <a href="index.html"><img src="assets/images/logo-2.png" alt="logo"></a>
             </div>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <div class="container">
-          <div
-            class="footer-wrapper d-flex flex-wrap justify-content-start align-items-center"
-          >
+          <div class="footer-wrapper d-flex flex-wrap justify-content-start align-items-center">
             <p class="copyright text-white">
-              Copyrights &copy; 2023 All Rights Reserved by Casinous
+              Copyrights © 2023 All Rights Reserved by Casinous
             </p>
           </div>
         </div>
       </div>
       <div class="shapes">
-        <img src="assets/images/footer/shape.png" alt="footer" class="shape1" />
+        <img src="assets/images/banner/logo-footer.png" alt="footer" class="shape1">
       </div>
     </footer>
-    <!-- Footer Section Ends Here -->
 
     <div class="modal fade custom-modal layout-2" id="notif"  tabindex="-1"  role="dialog" aria-modal="true" >
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content border-0">
                 <button class="p-0 _close border-0" data-bs-dismiss="modal">
-                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_bi_2514_13933)">
-                    <circle cx="40" cy="40" r="40" fill="#F82F77" fill-opacity="0.4"/>
-                    </g>
-                    <path d="M48.4852 28.6863L28.6862 48.4853C27.9051 49.2664 27.9051 50.5327 28.6862 51.3137C29.4672 52.0948 30.7336 52.0948 31.5146 51.3137L51.3136 31.5148C52.0947 30.7337 52.0947 29.4674 51.3136 28.6863C50.5326 27.9053 49.2662 27.9053 48.4852 28.6863Z" fill="#F82F77"/>
-                    <path d="M51.3138 48.4853L31.5148 28.6863C30.7338 27.9053 29.4674 27.9053 28.6864 28.6863C27.9053 29.4674 27.9053 30.7337 28.6864 31.5147L48.4854 51.3137C49.2664 52.0948 50.5327 52.0948 51.3138 51.3137C52.0948 50.5327 52.0948 49.2663 51.3138 48.4853Z" fill="#F82F77"/>
-                    <defs>
-                    <filter id="filter0_bi_2514_13933" x="-16" y="-16" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="8"/>
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2514_13933"/>
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2514_13933" result="shape"/>
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                    <feOffset/>
-                    <feGaussianBlur stdDeviation="8"/>
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
-                    <feBlend mode="normal" in2="shape" result="effect2_innerShadow_2514_13933"/>
-                    </filter>
-                    </defs>
-                    </svg>
+                    <img src="assets/images/close.png" alt="">
                 </button>
                 <div class="modal-body">
                     <div class="text-center logo">
@@ -225,7 +239,7 @@
                         ><img src="./assets/images/logo.svg" alt="logo"
                       /></a>
                     </div>
-                    <p>The minimum deposit amount is 10,000 won.</p>
+                    <p>Your withdrawal request has been completed.</p>
                     <div class="text-center footer-box">
                       <button type="button" data-bs-dismiss="modal" class="btn btn-primary">Cancel</button>
                     </div>             

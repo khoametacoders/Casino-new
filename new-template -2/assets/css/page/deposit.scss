@@ -1,9 +1,13 @@
 $font-first: 'Josefin Sans', sans-serif;
 $font-second: 'Open Sans', sans-serif;
+
 .full-height{height: 100vh;display: flex;flex-direction: column!important;
 	.header,.footer-section{flex-shrink:0;}
 	.header{position: inherit}
 	.main-page{    flex: 1 1 auto; overflow-y: auto;}
+}
+.title-box{display: flex; align-items: center; justify-content: center;column-gap: 24px; margin-bottom: 25px;
+	.title-text{font-weight: 700;color: #F82F77;font-size: 32px;font-family: 'Inter', sans-serif;text-transform: uppercase;letter-spacing: 0.05em}
 }
 .game-details-right{background-color: rgba(39, 7, 74, 1);border-radius: 0;padding:40px;margin-bottom: 100px;z-index: 2;position: relative;
 	#game{
@@ -31,9 +35,10 @@ $font-second: 'Open Sans', sans-serif;
 		&.btn-outline-primary{background: transparent;color: #F82F77; border: 1px solid;}
 	}
 }
+.deposit.main-page{background: linear-gradient(0deg, rgba(6, 2, 12, 0.70) 0%, rgba(6, 2, 12, 0.70) 100%), url("../../images/deposit-bg.jpg"), lightgray -209.125px -165.109px / 127.074% 128.69% no-repeat;}
 .custom-modal{
 	.modal-dialog{max-width: 600px;}
-	.modal-body{border-radius: 20px;box-shadow: 0px 0px 10px 0px rgba(248, 47, 119, 1);background: rgba(39, 7, 74, 0.8);backdrop-filter: blur(10px);padding-top: 60px;padding-bottom: 40px;
+	.modal-body{border-radius: 20px;box-shadow: 0px 0px 10px 0px rgba(248, 47, 119, 1);background: rgba(39, 7, 74, 0.8);backdrop-filter: blur(15px);padding-top: 60px;padding-bottom: 40px;
 
 		p{text-align: center;font-size:24px;line-height: 29.05px}
 	}
@@ -47,8 +52,19 @@ $font-second: 'Open Sans', sans-serif;
 	.footer-box{padding-top: 30px;}
 }
 .modal-backdrop.fade.show{background-color: white;opacity: 0.6;}
+.pt-100{padding-top: 100px}
+@media only screen and (max-width: 1170px) and (min-width: 600px) {
+	.game-details-right{margin-bottom: 25px;}
+}
+
+@media only screen and (max-width: 800px) {
+	.pv-top-footer{display:none}
+}
 
 @media only screen and (max-width: 600px) {
 	.game-details-right{padding-left: 15px;padding-right: 15px;}
 	.mb-w-100{width:100%}
+	.title-box .title-text{font-size:22px;}
+	.game-details-right{margin-bottom: 0}
+	.pt-100{padding-top: 0}
 }
