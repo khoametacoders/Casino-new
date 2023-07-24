@@ -1,0 +1,164 @@
+.banner-content__title-2 {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-shadow: 2px 0 #b73774, -2px 0 #b73774, 0 2px #b73774, 0 -2px #b73774,
+    1px 1px #b73774, -1px -1px #b73774, 1px -1px #b73774, -1px 1px #b73774;
+  max-width: 610px;
+  margin: auto;
+}
+@media (max-width: 1399px) {
+  .banner-content__title-2 {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-content__title-2 {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-content__title-2 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner-content__title-2 {
+    font-size: 32px;
+  }
+}
+
+.banner-section .bg-1 {
+  position: absolute;
+  top: -100px;
+  left: -150px;
+  z-index: 0;
+}
+
+@media (max-width: 1399px) {
+  .banner-section .bg-1 {
+    left: -150px;
+    /* width: 500px; */
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-section .bg-1 {
+    left: -150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-section .bg-1 {
+    left: -150px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner-section .bg-1 {
+    left: -150px;
+  }
+}
+
+.image-container {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  top: -160px;
+  right: -150px;
+  z-index: 0;
+  height: 580px;
+  width: 500px;
+}
+
+.banner-section .bg-2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1399px) {
+  .banner-section .bg-2 {
+    right: -150px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-section .bg-2 {
+    right: -150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-section .bg-2 {
+    right: -150px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner-section .bg-2 {
+    right: -150px;
+  }
+}
+
+.fadeTop {
+  width: 500px;
+  height: 580px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background: -o-linear-gradient(
+    359.97deg,
+    #27074a 9.43%,
+    rgba(39, 7, 74, 0) 46.17%
+  );
+  background: linear-gradient(
+    90.03deg,
+    #27074a 9.43%,
+    rgba(39, 7, 74, 0) 46.17%
+  );
+}
+
+/* CUSTOM BUTTON PINK */
+.btn-pink {
+  padding: 10px;
+  gap: 10px;
+  background: #f82f77;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn-pink:hover {
+  color: #ffffff;
+}
+
+.btn-outline {
+  padding: 10px;
+  gap: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn-outline:hover {
+  color: #ffffff;
+}
