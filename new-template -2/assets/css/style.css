@@ -51,22 +51,6 @@
   margin-left: 5px;
 }
 
-/* COMPANY SECTION PAGE LIVE CASINO */
-.company-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.company-section .frame-logo-company > a {
-  background-color: #e0d9df;
-  padding: 0 !important;
-  width: 100%;
-}
-.company-section .frame-logo-company > a > img {
-  width: 100%;
-  object-fit: contain;
-}
-
 /* HEADER */
 .banner-content__title-2 {
   font-family: "Inter", sans-serif;
