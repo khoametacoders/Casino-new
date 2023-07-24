@@ -35,7 +35,7 @@ $font-second: 'Open Sans', sans-serif;
 		&.btn-outline-primary{background: transparent;color: #F82F77; border: 1px solid;}
 	}
 }
-.deposit.main-page{background: linear-gradient(0deg, rgba(6, 2, 12, 0.70) 0%, rgba(6, 2, 12, 0.70) 100%), url("../../images/deposit-bg.jpg"), lightgray -209.125px -165.109px / 127.074% 128.69% no-repeat;}
+.deposit.main-page{background: url("../../images/background_body.png") no-repeat center;background-size: cover}
 .custom-modal{
 	.modal-dialog{max-width: 600px;}
 	.modal-body{border-radius: 20px;box-shadow: 0px 0px 10px 0px rgba(248, 47, 119, 1);background: rgba(39, 7, 74, 0.8);backdrop-filter: blur(15px);padding-top: 60px;padding-bottom: 40px;
