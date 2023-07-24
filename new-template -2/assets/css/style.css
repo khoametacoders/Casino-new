@@ -1,0 +1,70 @@
+/* // .custom-select {
+//     position: relative;
+//   }
+  
+//   .custom-select .las.la-globe,
+//   .custom-select .fas.fa-chevron-down {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     pointer-events: none;
+//   }
+  
+//   .custom-select .las.la-globe {
+//     left: 12px;
+//   }
+  
+//   .custom-select .fas.fa-chevron-down {
+//     right: 12px;
+//   } */
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+.container-has-login-header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: end;
+  column-gap: 16px !important;
+
+  font-weight: 500 !important;
+  line-height: 14px !important;
+  font-family: "Josefin Sans", sans-serif !important;
+  color: #ffc827 !important;
+}
+.container-has-login-header > a {
+  font-weight: 500 !important;
+  line-height: 14px !important;
+  font-family: "Josefin Sans", sans-serif !important;
+  color: #ffc827 !important;
+}
+
+.container-has-login-header > p > span {
+  color: white;
+  margin-left: 5px;
+}
+.container-has-login-header > a > span {
+  color: white;
+  margin-left: 5px;
+}
+
+/* COMPANY SECTION PAGE LIVE CASINO */
+.company-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.company-section .frame-logo-company > a {
+  background-color: #e0d9df;
+  padding: 0 !important;
+  width: 100%;
+}
+.company-section .frame-logo-company > a > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* DRAW PAGE */

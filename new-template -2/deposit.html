@@ -1,0 +1,398 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casino - Online Casino Platform</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon.png"
+      sizes="16x16"
+    />
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/lib/animate.css" />
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Secondary css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-offset="170"
+    data-bs-target=".privacy-policy-sidebar-menu"
+  >
+    <div class="overlay"></div>
+    <div class="preloader">
+      <div class="scene" id="scene">
+        <input type="checkbox" id="andicator" />
+        <div class="cube">
+          <div class="cube__face cube__face--front"><i></i></div>
+          <div class="cube__face cube__face--back"><i></i><i></i></div>
+          <div class="cube__face cube__face--right">
+            <i></i> <i></i> <i></i> <i></i> <i></i>
+          </div>
+          <div class="cube__face cube__face--left">
+            <i></i> <i></i> <i></i> <i></i> <i></i> <i></i>
+          </div>
+          <div class="cube__face cube__face--top"><i></i> <i></i> <i></i></div>
+          <div class="cube__face cube__face--bottom">
+            <i></i> <i></i> <i></i> <i></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="container">
+        <div class="container-has-login-header">
+          <a class="main-text" href="wallet.html"
+            >Wallet <span>9,999,999 won</span></a
+          >
+          <p>In games <span>88,888,888 won</span></p>
+          <a href="note.html">Note <span>(0)</span></a>
+        </div>
+        <div class="header-bottom">
+          <div class="header-bottom-area align-items-center">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="./assets/images/logo.png" alt="logo"
+              /></a>
+            </div>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="live-casino.html">LIVE CASINO</a></li>
+              <li><a href="slot.html">SLOT</a></li>
+              <li><a href="deposit.html">DEPOSIT APPLICANT</a></li>
+              <li><a href="withdraw.html">WITHDRAW REQUEST</a></li>
+              <li><a href="customer-center.html">CUSTOMER CENTER</a></li>
+              <li><a href="notice.html">NOTICE</a></li>
+              <li><a href="sign-in.html">SIGN IN</a></li>
+              <li><a href="sign-up.html">SIGN UP</a></li>
+
+              <button class="btn-close btn-close-white d-lg-none"></button>
+            </ul>
+            <div
+              class="header-trigger-wrapper d-flex d-lg-none align-items-center"
+            >
+              <div class="header-trigger me-4">
+                <span></span>
+              </div>
+              <a
+                href="sign-in.html"
+                class="cmn--btn active btn--md d-none d-sm-block"
+                >Sign In</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- inner hero section start -->
+    <section
+      class="inner-banner bg_img"
+      style="background: url('assets/images/inner-banner/bg2.jpg') top"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-xl-6 text-center">
+            <h2 class="title text-white">Deposit</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- inner hero section end -->
+
+    <section class="padding-top padding-bottom">
+      <div class="container">
+        <div class="row gy-5" style="position: relative">
+          <div class="col-lg-6">
+            <div class="game-details-left">
+              <h3 class="mb-4 pb-3 text-center">Deposit Applicant</h3>
+              <div>
+                <ul class="text-policy">
+                  <li>The minimum amount to recharge is 10,000 won.</li>
+                  <li>The minimum charge unit is 10,000 won.</li>
+                  <li>
+                    Please make sure to apply for recharge after depositing.
+                  </li>
+                  <li>
+                    Be sure to check the deposit account before depositing.
+                  </li>
+                  <li>
+                    We cannot help you with the recharge process when depositing
+                    to your previous account.
+                  </li>
+                  <li>
+                    For other charging regulations, please check the notice
+                    regulations.
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="mt-5 text-center cmn--btn active w-100 text-center"
+                id="button-inquiry-deposit"
+              >
+                Account Inquiry
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="game-details-right">
+              <form id="game" novalidate="novalidate">
+                <h3 class="mb-4 text-center">
+                  Current Balance :
+                  <span class="base--color"
+                    ><span class="bal">100</span> USD</span
+                  >
+                </h3>
+                <div style="min-height: 250px">
+                  <div class="form-group" style="width: 100%">
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        name="invest"
+                        class="form-control form--control amount-field"
+                        placeholder="Select or Enter amount"
+                        id="money-input"
+                      />
+                      <span
+                        class="input-group-text text-white bg--base"
+                        id="basic-addon2"
+                        >Won</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row row-col-4 button-money-container g-3">
+                    <div class="col-3">
+                      <div class="button-money" data-amount="10000">
+                        <p>10,000</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="button-money" data-amount="30000">
+                        <p>30,000</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="button-money" data-amount="50000">
+                        <p>50,000</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="button-money" data-amount="100000">
+                        <p>100,000</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="button-money" data-amount="300000">
+                        <p>300,000</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="button-money" data-amount="500000">
+                        <p>500,000</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="button-money" data-amount="1000000">
+                        <p>1,000,000</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="button-reset" id="button-reset-deposit">
+                        <p>Reset</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-5 text-center cmn--btn active w-100 text-center"
+                  id="submit-deposit"
+                >
+                  Deposit Applicant
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="container-alert" id="alert-withdraw-money-deposit">
+            <div
+              style="margin-left: auto; width: 30px; cursor: pointer"
+              class="close-alert"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.3032 7.929L7.92881 20.3034C7.44065 20.7915 7.44065 21.583 7.92881 22.0711C8.41696 22.5593 9.20842 22.5593 9.69657 22.0711L22.0709 9.69677C22.5591 9.20862 22.5591 8.41716 22.0709 7.929C21.5828 7.44085 20.7913 7.44085 20.3032 7.929Z"
+                  fill="white"
+                />
+                <path
+                  d="M22.0708 20.3034L9.69638 7.92905C9.20823 7.44089 8.41677 7.44089 7.92862 7.92905C7.44046 8.4172 7.44046 9.20866 7.92862 9.69682L20.303 22.0712C20.7911 22.5593 21.5826 22.5593 22.0708 22.0712C22.5589 21.583 22.5589 20.7916 22.0708 20.3034Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="logo" style="margin: auto; width: fit-content">
+              <a href="index.html"
+                ><img src="./assets/images/logo.png" alt="logo"
+              /></a>
+            </div>
+            <p>The minimum deposit amount is 10,000 won.</p>
+            <div class="mt-5 text-center">
+              <button
+                type="submit"
+                class="cmn--btn active w-auto text-cente close-alert"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+          <div class="container-alert" id="alert-reinquire-deposit">
+            <div
+              style="margin-left: auto; width: 30px; cursor: pointer"
+              class="close-alert"
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.3032 7.929L7.92881 20.3034C7.44065 20.7915 7.44065 21.583 7.92881 22.0711C8.41696 22.5593 9.20842 22.5593 9.69657 22.0711L22.0709 9.69677C22.5591 9.20862 22.5591 8.41716 22.0709 7.929C21.5828 7.44085 20.7913 7.44085 20.3032 7.929Z"
+                  fill="white"
+                />
+                <path
+                  d="M22.0708 20.3034L9.69638 7.92905C9.20823 7.44089 8.41677 7.44089 7.92862 7.92905C7.44046 8.4172 7.44046 9.20866 7.92862 9.69682L20.303 22.0712C20.7911 22.5593 21.5826 22.5593 22.0708 22.0712C22.5589 21.583 22.5589 20.7916 22.0708 20.3034Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="logo" style="margin: auto; width: fit-content">
+              <a href="index.html"
+                ><img src="./assets/images/logo.png" alt="logo"
+              /></a>
+            </div>
+            <p>You can not re-inquire after the manager response</p>
+            <div class="mt-5 text-center">
+              <button
+                type="submit"
+                class="cmn--btn active w-auto text-cente close-alert"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal custom--modal fade show"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-modal="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content section-bg border-0">
+          <div class="modal-header modal--header bg--base">
+            <h4 class="modal-title text-dark" id="exampleModalLongTitle">
+              Game Rules
+            </h4>
+          </div>
+          <div class="modal-body modal--body">
+            <h3 class="title mb-2">Before Game Start:</h3>
+            <p>
+              Officia quod velit eaque tempore assumenda, blanditiis corporis
+              praesentium voluptate provident. Sunt enim obcaecati odio
+              doloremque molestiae aspernatur fuga eveniet molestias autem.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              ipsam sapiente aut est nostrum, labore quibusdam aliquid
+              repellendus dignissimos consequuntur aspernatur voluptates
+              consectetur aliquam quam nesciunt impedit? Vitae blanditiis vero
+              officiis quidem ipsum esse! Praesentium, laudantium numquam!
+              Corporis sed adipisci, incidunt aut, accusamus sit, nihil tenetur
+              ipsam quaerat optio nisi?
+            </p>
+          </div>
+          <div class="modal-footer modal--footer">
+            <button
+              type="button"
+              class="btn btn--danger btn--md"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section Starts Here -->
+    <footer
+      class="footer-section bg_img"
+      style="background: url(assets/images/footer/bg.jpg) center"
+    >
+      <div class="footer-top">
+        <div class="container">
+          <div
+            class="footer-wrapper d-flex flex-wrap align-items-center justify-content-md-between justify-content-center"
+          >
+            <div class="logo mb-3 mb-md-0">
+              <a href="index.html"
+                ><img src="assets/images/logo.png" alt="logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div
+            class="footer-wrapper d-flex flex-wrap justify-content-start align-items-center"
+          >
+            <p class="copyright text-white">
+              Copyrights &copy; 2023 All Rights Reserved by Casinous
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="shapes">
+        <img src="assets/images/footer/shape.png" alt="footer" class="shape1" />
+      </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+    <!-- jQuery library -->
+    <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap 5 js -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+
+    <!-- Pluglin Link -->
+    <script src="assets/js/lib/slick.min.js"></script>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/page/deposit.js"></script>
+  </body>
+</html>
