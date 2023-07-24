@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- Secondary css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="assets/css/page/deposit.css" />
   </head>
   <body
     data-bs-spy="scroll"
@@ -52,20 +54,15 @@
       </div>
     </div>
 
+<!--New-->
+
     <div class="header">
       <div class="container">
-        <div class="container-has-login-header">
-          <a class="main-text" href="wallet.html"
-            >Wallet <span>9,999,999 won</span></a
-          >
-          <p>In games <span>88,888,888 won</span></p>
-          <a href="note.html">Note <span>(0)</span></a>
-        </div>
         <div class="header-bottom">
           <div class="header-bottom-area align-items-center">
             <div class="logo">
               <a href="index.html"
-                ><img src="./assets/images/logo.png" alt="logo"
+                ><img src="./assets/images/logo-2.png" alt="logo"
               /></a>
             </div>
             <ul class="menu">
@@ -76,267 +73,187 @@
               <li><a href="withdraw.html">WITHDRAW REQUEST</a></li>
               <li><a href="customer-center.html">CUSTOMER CENTER</a></li>
               <li><a href="notice.html">NOTICE</a></li>
-              <li><a href="sign-in.html">SIGN IN</a></li>
-              <li><a href="sign-up.html">SIGN UP</a></li>
-
-              <button class="btn-close btn-close-white d-lg-none"></button>
+              <!-- <li><a href="sign-in.html">SIGN IN</a></li>
+              <li><a href="sign-up.html">SIGN UP</a></li> -->
             </ul>
+            <div class="d-flex" style="margin-top: 10px">
+              <a href="sign-in.html" class="d-none d-sm-block btn-outline"
+                >Sign In</a
+              >
+              <a href="sign-up.html" class="d-none d-sm-block btn-pink"
+                >Sign Up</a
+              >
+            </div>
+
             <div
               class="header-trigger-wrapper d-flex d-lg-none align-items-center"
             >
               <div class="header-trigger me-4">
                 <span></span>
               </div>
-              <a
-                href="sign-in.html"
-                class="cmn--btn active btn--md d-none d-sm-block"
-                >Sign In</a
-              >
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- inner hero section start -->
-    <section
-      class="inner-banner bg_img"
-      style="background: url('assets/images/inner-banner/bg2.jpg') top"
-    >
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-7 col-xl-6 text-center">
-            <h2 class="title text-white">Withdraw</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- inner hero section end -->
+    <div class="main-page pt-5 layout-2 position-relative deposit">
+        <div class="pt-100">
+            <div class="title-box pt-5">
+                <svg width="241" height="9" viewBox="0 0 241 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="240" height="8" transform="matrix(-1 0 0 1 240.5 0.5)" fill="url(#paint0_linear_2479_15584)"/>
+                <defs>
+                <linearGradient id="paint0_linear_2479_15584" x1="-3.91156e-07" y1="4" x2="240" y2="3.99998" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F82F77"/>
+                <stop offset="1" stop-color="#F82F77" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>
+                <h4 class="title-text">withdraw request</h4>
+                <svg width="241" height="9" viewBox="0 0 241 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="240" height="8" fill="url(#paint0_linear_2479_15586)"/>
+                <defs>
+                <linearGradient id="paint0_linear_2479_15586" x1="0.5" y1="4.5" x2="240.5" y2="4.49998" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F82F77"/>
+                <stop offset="1" stop-color="#F82F77" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>
 
-    <section class="padding-top padding-bottom">
-      <div class="container">
-        <div class="row gy-5" style="position: relative">
-          <div class="col-lg-6">
-            <div class="game-details-left">
-              <h3 class="mb-4 pb-3 text-center">Withdraw Request</h3>
-              <div style="min-height: 340px">
-                <ul class="text-policy">
-                  <li>The minimum withdrawal amount is 50,000 won.</li>
-                  <li>The minimum withdrawal unit is 10,000 won.</li>
-                  <li>
-                    Deposits to designated accounts will be processed within a
-                    maximum of 10 minutes after requesting withdrawal.
-                  </li>
-                  <li>
-                    Deposit processing is not possible except for the account
-                    specified at the time of registration
-                  </li>
-                  <li>Frequent inquiries may delay processing.</li>
-                  <li>
-                    For other withdrawal regulations, please check the notice
-                    regulations.
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="game-details-right">
+            <div class="content-box">
+                <div class="game-details-right mx-auto" style="max-width: 710px;">
               <form id="game" novalidate="novalidate">
-                <h3 class="mb-4 text-center">
+                <h3 class="mb-1">
                   Current Balance :
-                  <span class="base--color"
-                    ><span class="bal">100,000</span> USD</span
-                  >
+                  <span class="base--color"><span class="bal">100</span> USD</span>
                 </h3>
-                <div style="min-height: 250px">
+                <div class="mb-3">
                   <div class="form-group" style="width: 100%">
-                    <div class="input-group mb-3">
-                      <input
-                        type="text"
-                        name="invest"
-                        class="form-control form--control amount-field"
-                        placeholder="Select or Enter amount"
-                        id="money-input-withdraw"
-                      />
-                      <span
-                        class="input-group-text text-white bg--base"
-                        id="basic-addon2"
-                        >Won</span
-                      >
+                    <div class="input-group mb-2">
+                      <input type="text" name="invest" class="form-control form--control amount-field" placeholder="Select or Enter amount" id="money-input">
                     </div>
                   </div>
 
-                  <div class="row row-col-4 button-money-container g-3">
-                    <div class="col-3">
+                  <div class="row row-col-4 button-money-container g-3" style="width:auto !important;">
+                    <div class="col-4">
+                      <div class="button-money active" data-amount="10000">
+                        <p>10,000</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="button-money" data-amount="30000">
+                        <p>30,000</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
                       <div class="button-money" data-amount="50000">
                         <p>50,000</p>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4">
                       <div class="button-money" data-amount="100000">
                         <p>100,000</p>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4">
                       <div class="button-money" data-amount="300000">
                         <p>300,000</p>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4">
                       <div class="button-money" data-amount="500000">
                         <p>500,000</p>
                       </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4">
                       <div class="button-money" data-amount="1000000">
                         <p>1,000,000</p>
                       </div>
                     </div>
-                    <div class="col-3">
-                      <div class="button-money" data-amount="3000000">
-                        <p>3,000,000</p>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="button-money" data-amount="5000000">
-                        <p>5,000,000</p>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="button-reset" id="button-reset-withdraw">
+                    <div class="col-8">
+                      <div class="button-reset" id="button-reset-deposit">
                         <p>Reset</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div
-                  class="mt-5 text-center cmn--btn active w-100 text-center"
-                  id="submit-withdraw"
-                >
-                  Withdraw Applicant
+                <div class="submit-box d-block d-sm-flex mb-4" style="column-gap: 25px">
+                    
+                    <div class="text-center active w-100 text-center btn btn-primary" id="submit-deposit">
+                        Deposit Applicant
+                    </div>
                 </div>
+
+                <ul class="list-unstyled _list">
+                    <li>The minimum withdrawal amount is 50,000 won.</li>
+                    <li>The minimum withdrawal unit is 10,000 won.</li>
+                    <li>Deposits to designated accounts will be processed within a maximum of 10 minutes after requesting withdrawal.</li>
+                    <li>Deposit processing is not possible except for the account specified at the time of registration.</li>
+                    <li>Frequent inquiries may delay processing.</li>
+                    <li>For other withdrawal regulations, please check the notice regulations.</li>
+                </ul>
+                
               </form>
             </div>
-          </div>
-          <div class="container-alert" id="alert-withdraw-applicant">
-            <div
-              style="margin-left: auto; width: 30px; cursor: pointer"
-              class="close-alert"
-            >
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.3032 7.929L7.92881 20.3034C7.44065 20.7915 7.44065 21.583 7.92881 22.0711C8.41696 22.5593 9.20842 22.5593 9.69657 22.0711L22.0709 9.69677C22.5591 9.20862 22.5591 8.41716 22.0709 7.929C21.5828 7.44085 20.7913 7.44085 20.3032 7.929Z"
-                  fill="white"
-                />
-                <path
-                  d="M22.0708 20.3034L9.69638 7.92905C9.20823 7.44089 8.41677 7.44089 7.92862 7.92905C7.44046 8.4172 7.44046 9.20866 7.92862 9.69682L20.303 22.0712C20.7911 22.5593 21.5826 22.5593 22.0708 22.0712C22.5589 21.583 22.5589 20.7916 22.0708 20.3034Z"
-                  fill="white"
-                />
-              </svg>
             </div>
-            <div class="logo" style="margin: auto; width: fit-content">
-              <a href="index.html"
-                ><img src="./assets/images/logo.png" alt="logo"
-              /></a>
-            </div>
-            <p>You do not have enough money.</p>
-            <div class="mt-5 text-center">
-              <button
-                type="submit"
-                class="cmn--btn active w-auto text-cente close-alert"
-              >
-                Close
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <div
-      class="modal custom--modal fade show"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-modal="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content section-bg border-0">
-          <div class="modal-header modal--header bg--base">
-            <h4 class="modal-title text-dark" id="exampleModalLongTitle">
-              Game Rules
-            </h4>
-          </div>
-          <div class="modal-body modal--body">
-            <h3 class="title mb-2">Before Game Start:</h3>
-            <p>
-              Officia quod velit eaque tempore assumenda, blanditiis corporis
-              praesentium voluptate provident. Sunt enim obcaecati odio
-              doloremque molestiae aspernatur fuga eveniet molestias autem.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              ipsam sapiente aut est nostrum, labore quibusdam aliquid
-              repellendus dignissimos consequuntur aspernatur voluptates
-              consectetur aliquam quam nesciunt impedit? Vitae blanditiis vero
-              officiis quidem ipsum esse! Praesentium, laudantium numquam!
-              Corporis sed adipisci, incidunt aut, accusamus sit, nihil tenetur
-              ipsam quaerat optio nisi?
-            </p>
-          </div>
-          <div class="modal-footer modal--footer">
-            <button
-              type="button"
-              class="btn btn--danger btn--md"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
+        <div class="position-absolute pv-top-footer" style="bottom:0;left: 0;">
+            <img style="width: calc((100vw - 710px) / 2);max-width: 380px;" src="assets/images/deposit.png" alt="">
         </div>
-      </div>
     </div>
 
-    <!-- Footer Section Starts Here -->
-    <footer
-      class="footer-section bg_img"
-      style="background: url(assets/images/footer/bg.jpg) center"
-    >
+  <footer class="footer-section bg_img" style="background: url(assets/images/footer/bg.jpg) center">
       <div class="footer-top">
         <div class="container">
-          <div
-            class="footer-wrapper d-flex flex-wrap align-items-center justify-content-md-between justify-content-center"
-          >
+          <div class="footer-wrapper d-flex flex-wrap align-items-center justify-content-md-between justify-content-center">
             <div class="logo mb-3 mb-md-0">
-              <a href="index.html"
-                ><img src="assets/images/logo.png" alt="logo"
-              /></a>
+              <a href="index.html"><img src="assets/images/logo-2.png" alt="logo"></a>
             </div>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <div class="container">
-          <div
-            class="footer-wrapper d-flex flex-wrap justify-content-start align-items-center"
-          >
+          <div class="footer-wrapper d-flex flex-wrap justify-content-start align-items-center">
             <p class="copyright text-white">
-              Copyrights &copy; 2023 All Rights Reserved by Casinous
+              Copyrights © 2023 All Rights Reserved by Casinous
             </p>
           </div>
         </div>
       </div>
       <div class="shapes">
-        <img src="assets/images/footer/shape.png" alt="footer" class="shape1" />
+        <img src="assets/images/banner/logo-footer.png" alt="footer" class="shape1">
       </div>
     </footer>
-    <!-- Footer Section Ends Here -->
+
+    <div class="modal fade custom-modal layout-2" id="notif"  tabindex="-1"  role="dialog" aria-modal="true" >
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content border-0">
+                <button class="p-0 _close border-0" data-bs-dismiss="modal">
+                    <img src="assets/images/close.png" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="text-center logo">
+                      <a href="index.html"
+                        ><img src="./assets/images/logo.svg" alt="logo"
+                      /></a>
+                    </div>
+                    <p>Your withdrawal request has been completed.</p>
+                    <div class="text-center footer-box">
+                      <button type="button" data-bs-dismiss="modal" class="btn btn-primary">Cancel</button>
+                    </div>             
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+ <!--end new-->
+    
+
+
 
     <!-- jQuery library -->
     <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
@@ -348,6 +265,6 @@
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/page/withdraw.js"></script>
+    <script src="assets/js/page/deposit.js"></script>
   </body>
 </html>
