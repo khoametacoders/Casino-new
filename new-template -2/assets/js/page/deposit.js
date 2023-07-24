@@ -38,10 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("amount:", amount);
 
     if (amount < 10000) {
-      $("#alert-withdraw-money-deposit").addClass("visible");
-    } else {
-      $("#alert-withdraw-money-deposit").removeClass("visible");
-    }
+      // $("#alert-withdraw-money-deposit").addClass("visible");
+      $("#notif").modal("show");
+    } 
     // Reset the form or perform other operations
   });
   $("#button-reset-deposit").click(function () {
