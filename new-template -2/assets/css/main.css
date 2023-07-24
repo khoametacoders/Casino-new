@@ -2095,7 +2095,7 @@ i {
 
 .footer-section {
   position: relative;
-  padding: 40px 0 35px;
+  padding: 40px 0 30px;
 }
 
 .footer-section .shape1 {
@@ -2103,6 +2103,7 @@ i {
   max-width: 220px;
   right: 0;
   bottom: 0;
+  z-index: 2;
 }
 
 @media (max-width: 1700px) {
@@ -2154,10 +2155,9 @@ i {
 }
 
 .footer-bottom {
-  padding-top: 25px;
+  padding-top: 0px;
   margin-top: 20px;
   position: relative;
-  left: -50px;
 }
 
 .pagination {
