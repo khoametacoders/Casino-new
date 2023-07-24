@@ -1,0 +1,52 @@
+/* GAME SECTION LIVE CASINO */
+.company-section {
+  padding-top: 300px;
+  padding-bottom: 200px;
+  background-image: url(../../images/casino-game/bg-section-casino.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.game-container {
+  width: 280px;
+}
+.img-container {
+  position: relative;
+  width: 280px;
+  height: 320px;
+  background-image: url(../../images/casino-game/bg-game.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-character {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-gamename {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main-title {
+  font-family: "Josefin Sans", sans-serif !important;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+.detail-title {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  text-align: center;
+}
