@@ -675,9 +675,9 @@ img {
   height: 15px;
   width: 15px;
   cursor: pointer;
-  background: #fff;
   border-radius: 3px;
   display: inline-block;
+  background-color: transparent;
   position: relative;
 }
 
@@ -688,9 +688,9 @@ img {
   font-family: "Font Awesome 5 Free";
   content: "\f00c";
   font-size: 10px;
-  color: #fff;
+  color: #f82f77;
   visibility: hidden;
-  background: #ffc827;
+  background-color: white;
   line-height: 1;
   border-radius: 3px;
   width: 15px;
@@ -2125,7 +2125,7 @@ i {
   height: 100%;
   left: 0;
   top: 0;
-  background: #2e0327;
+  background: #27074a;
   opacity: 0.9;
 }
 
