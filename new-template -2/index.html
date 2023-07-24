@@ -24,12 +24,15 @@
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/page/index.css" />
+    <link rel="stylesheet" href="assets/css/page/header.css" />
     <!-- Secondary css -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -62,13 +65,6 @@
     </div>
     <div class="header">
       <div class="container">
-        <div class="container-has-login-header">
-          <a class="main-text" href="wallet.html"
-            >Wallet <span>9,999,999 won</span></a
-          >
-          <p>In games <span>88,888,888 won</span></p>
-          <a href="note.html">Note <span>(0)</span></a>
-        </div>
         <div class="header-bottom">
           <div class="header-bottom-area align-items-center">
             <div class="logo">
@@ -84,22 +80,24 @@
               <li><a href="withdraw.html">WITHDRAW REQUEST</a></li>
               <li><a href="customer-center.html">CUSTOMER CENTER</a></li>
               <li><a href="notice.html">NOTICE</a></li>
-              <li><a href="sign-in.html">SIGN IN</a></li>
-              <li><a href="sign-up.html">SIGN UP</a></li>
-
-              <button class="btn-close btn-close-white d-lg-none"></button>
+              <!-- <li><a href="sign-in.html">SIGN IN</a></li>
+              <li><a href="sign-up.html">SIGN UP</a></li> -->
             </ul>
+            <div class="d-flex" style="margin-top: 10px">
+              <a href="sign-in.html" class="d-none d-sm-block btn-outline"
+                >Sign In</a
+              >
+              <a href="sign-up.html" class="d-none d-sm-block btn-pink"
+                >Sign Up</a
+              >
+            </div>
+
             <div
               class="header-trigger-wrapper d-flex d-lg-none align-items-center"
             >
               <div class="header-trigger me-4">
                 <span></span>
               </div>
-              <a
-                href="sign-in.html"
-                class="cmn--btn active btn--md d-none d-sm-block"
-                >Sign In</a
-              >
             </div>
           </div>
         </div>
@@ -107,87 +105,57 @@
     </div>
 
     <!-- Banner Section Starts Here -->
-    <section
-      class="banner-section bg_img overflow-hidden"
-      style="background: url(assets/images/banner/bg.png) center"
-    >
+    <section class="banner-section bg_img overflow-hidden">
       <div class="container">
-        <div class="banner-wrapper d-flex flex-wrap align-items-center">
+        <div
+          class="banner-wrapper d-flex flex-wrap align-items-center justify-content-center"
+        >
           <div class="banner-content">
-            <h1 class="banner-content__title">
-              Play <span class="text--base">Online Casino</span> & Win Money
-              Unlimited
-            </h1>
-            <p class="banner-content__subtitle">
-              PLAY CASINO AND EARN CRYPTO IN ONLINE. THE ULTIMATE ONLINE CASINO
-              PLATFORM.
-            </p>
-            <div class="button-wrapper">
-              <a href="#" class="cmn--btn active btn--lg"> LIVE CASINO </a>
-              <a href="#" class="cmn--btn active btn--lg"> SLOT</a>
-            </div>
-            <img src="assets/images/banner/card.png" alt="" class="shape1" />
+            <h2 class="banner-content__title" style="font-size: 48px">
+              LIVE CASINO & SLOT GAME
+            </h2>
+            <h2 class="banner-content__title-2">
+              글로벌 최고의 라이브 카지노 환상적인 슬롯게임 플레이
+            </h2>
+            <p class="banner-content__subtitle">Your Are The Winner Today!</p>
           </div>
-          <div class="banner-thumb">
-            <img src="assets/images/banner/thumb.png" alt="banner" />
-          </div>
+        </div>
+        <img src="assets/images/banner/bg-1.png" alt="" class="bg-1" />
+        <div class="image-container">
+          <img src="assets/images/banner/bg-2.png" alt="" class="bg-2" />
+          <div class="fadeTop"></div>
         </div>
       </div>
     </section>
     <!-- Banner Section Ends Here -->
 
-    <!-- How Section Starts Here -->
-    <section class="why-section padding-top padding-bottom overflow-hidden">
+    <!-- Section Experience the best game -->
+    <section class="section-experience">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="section-header text-center">
-              <h2 class="section-header__title">How to Play Game</h2>
-              <p>
-                A casino is a facility for certain types of gambling. Casinos
-                are often built combined with hotels, resorts.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-4 justify-content-center">
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="how-item">
-              <div class="how-item__thumb">
-                <i class="las la-user-plus"></i>
-                <div class="badge badge--lg badge--round radius-50">01</div>
-              </div>
-              <div class="how-item__content">
-                <h4 class="title">Sign Up First & Login</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="how-item">
-              <div class="how-item__thumb">
-                <i class="las la-id-card"></i>
-                <div class="badge badge--lg badge--round radius-50">02</div>
-              </div>
-              <div class="how-item__content">
-                <h4 class="title">Complete you Profile</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="how-item">
-              <div class="how-item__thumb">
-                <i class="las la-dice"></i>
-                <div class="badge badge--lg badge--round radius-50">03</div>
-              </div>
-              <div class="how-item__content">
-                <h4 class="title">Choose a Game & Play</h4>
-              </div>
-            </div>
+        <div class="experience-text-container">
+          <img
+            src="./assets/images/banner/bg-experience.png"
+            class="bg-experience"
+          />
+          <div
+            class="experience-items d-flex align-items-center justify-content-between"
+          >
+            <div class="pink-bar-left"></div>
+            <p class="text-experience">Experience the best game</p>
+            <div class="pink-bar-right"></div>
           </div>
         </div>
       </div>
+      <div class="experience-game-container">
+        <div
+          class="experience-container-image d-flex justify-content-between align-items-center"
+        >
+          <img src="./assets/images/banner/live-casino.png" class="img-live" />
+          <img src="./assets/images/banner/slot-game.png" class="img-slot" />
+        </div>
+      </div>
     </section>
-    <!-- How Section Ends Here -->
+    <!-- End Section Experience the best game -->
 
     <!-- Footer Section Starts Here -->
     <footer
@@ -201,7 +169,7 @@
           >
             <div class="logo mb-3 mb-md-0">
               <a href="index.html"
-                ><img src="assets/images/logo.png" alt="logo"
+                ><img src="assets/images/logo-2.png" alt="logo"
               /></a>
             </div>
           </div>
@@ -219,7 +187,11 @@
         </div>
       </div>
       <div class="shapes">
-        <img src="assets/images/footer/shape.png" alt="footer" class="shape1" />
+        <img
+          src="assets/images/banner/logo-footer.png"
+          alt="footer"
+          class="shape1"
+        />
       </div>
     </footer>
     <!-- Footer Section Ends Here -->
