@@ -359,7 +359,7 @@ div[class*="col"] {
     position: relative;
     &::before {
       @include line-ico;
-      content: "\f107";
+      content: "\2b";
       right: 0px;
       top: 50%;
       transform: translateY(-50%);

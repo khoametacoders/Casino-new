@@ -26,8 +26,8 @@
     z-index: 11;
     @include transition;
     border-bottom: 1px solid transparent;
+    background: #27074A;
     &.sticky {
-        background: $section-bg;
         position: fixed;
         top: 0;
         border-bottom: 1px solid rgba($base-color,.1);
@@ -352,3 +352,6 @@
         }
     }
 }
+
+
+
