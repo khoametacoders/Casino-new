@@ -1,0 +1,332 @@
+@import '../_abstracts/_mixins';
+@import '../_abstracts/_variables';
+
+@import '../_base/_typography';
+
+.customer-center-page-wrapper {
+  padding-top: 284px;
+
+  .contact-section-wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 120px;
+    display: flex;
+    height: 326px;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+
+    .title-wrapper {
+
+      h4 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #1CC343;
+      }
+
+      h3 {
+        max-width: 318px;
+        
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 60px;
+        letter-spacing: -1px;
+        margin-top: 16px;
+      }
+
+    }
+
+    .inquiry-form-wrapper {
+      flex: 1 0;
+
+      .inquiry-form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+
+        label {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+
+        textarea {
+          resize: none;
+          height: 118px;
+          background: transparent;
+          border: 2px solid #F82F77;
+          outline: none;
+
+          &:focus {
+            outline: none;
+            border: 2px solid #F82F77;
+          }
+        }
+      }
+
+      .inquiry-btn-wrapper {
+        margin-top: 40px;
+        display: flex;
+        column-gap: 24px;
+
+        button {
+          border: none;
+          outline: none;
+          padding: 10px 24px;
+          background: #F82F77;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 40px;
+          color: #FFFFFF;
+
+          &:focus {
+            border: none;
+            outline: none;
+          }
+
+          &:active {
+            border: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// new footer
+.footer-section-wrapper {
+  width: 100%;
+  background: url("./../images/footer/new_bg_footer.png");
+  height: 160px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: start;
+  justify-content: center;
+  padding: 0 70px;
+
+  p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+  }
+
+  .left-side-image {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      z-index: 1;
+  }
+
+  .right-side-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
+}
+
+// new faq section
+.faq-section-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 40px 120px;
+
+  .faq-title {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    margin-bottom: 16px;
+
+    span {
+      &.left-line {
+        flex: 1 0;
+        height: 8px;
+        background: linear-gradient(90deg, #F82F77 0%, rgba(248, 47, 119, 0) 100%);
+        transform: rotate(180deg);
+      }
+      
+      &.right-line {
+        flex: 1 0;
+        height: 8px;
+        background: linear-gradient(90deg, #F82F77 0%, rgba(248, 47, 119, 0) 100%);
+      }
+
+    }
+    
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 44px;
+      color: #F82F77;
+      margin-top: 0;
+    }
+
+
+  }
+
+  .faq-content-wrapper {
+    .faq-item-wrapper {
+      height: auto;
+      padding: 16px 25px 16px 25px;
+      border-bottom: 4px solid #F82F7780;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &.open {
+        .faq-item-wrapper__title {
+          &::before {
+            content: "\f068";
+            color: #FFFFFF;
+          }
+        }
+      }
+      &__title {
+        cursor: pointer;
+        position: relative;
+
+        display: flex;
+        align-items: baseline;
+
+        span {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 27px;
+          padding-right: 20px;
+          border-right: 1px solid #FFFFFF;
+        }
+
+        h5 {
+          padding-left: 20px;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 27px;
+          max-width: 272px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+
+        &::before {
+          @include line-ico;
+          content: "\2b";
+          font-size: 36px;
+          right: 0;
+          bottom: -15px;
+          @include transition;
+          color: #F82F77;
+        }
+      }
+
+      &__content {
+        display: none;
+        
+        p {
+          max-width: 760px;
+        }
+      }
+    }
+  }
+}
+
+// new header
+.header-main-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  @include transition;
+  &.sticky {
+      position: fixed;
+      top: 0;
+  }
+
+  .header-main {
+      display: flex;
+      align-items: center;
+      background: #27074A;
+      height: 66px;
+      padding: 0 70px;
+
+      .header-logo {
+          height: 45px;
+      }
+
+      ul.main-menu {
+          flex: 1 0;
+          display: flex;
+          text-transform: uppercase;
+          padding: 0 45.5px;
+          column-gap: 24px;
+
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+      }
+
+      .header-btn-wrapper {
+          a {
+              padding: 0 10px;
+              font-weight: 600;
+          }
+          .has-wrapper {
+              background: #F82F77;
+          }
+      }
+  }
+
+  .page-title-wrapper {
+      height: 80px;
+      width: 100%;
+      padding: 0 70px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .page-title {
+          width: 526px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: url("./../images/inner-banner/titleBanner.png");
+
+          h1 {
+              font-size: 40px;
+              font-weight: 700;
+              line-height: 48px;
+          }
+      }
+
+      .wallet-header-container {
+          position: absolute;
+          display: flex;
+          top: 0;
+          right: 70px;
+          height: 50px;
+          width: 423px;
+          border: 1px solid #F82F77;
+          border-radius: 999px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 16px;
+
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 16px;
+
+          span {
+              color: #F82F77;
+          }
+      }
+  }
+  
+}
