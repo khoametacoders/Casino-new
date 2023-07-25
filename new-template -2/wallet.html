@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- Secondary css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- page css -->
+    <link rel="stylesheet" href="assets/css/wallet.css" />
   </head>
   <body
     data-bs-spy="scroll"
@@ -52,7 +54,7 @@
       </div>
     </div>
 
-    <div class="wallet-page-wrapper" style="background: url('./assets/images/background_body.png'); padding-top: 284px;">
+    <div class="wallet-page-wrapper" style="background: url('./assets/images/background_body.png'); padding-top: 284px; position: relative;">
       <div class="header-main-wrapper sticky">
         <div class="header-main">
           <div class="header-logo">
@@ -61,79 +63,93 @@
             /></a>
           </div>
           <ul class="main-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="live-casino.html">LIVE CASINO</a></li>
-            <li><a href="slot.html">SLOT</a></li>
-            <li><a href="deposit.html">DEPOSIT APPLICANT</a></li>
-            <li><a href="withdraw.html">WITHDRAW REQUEST</a></li>
-            <li><a href="customer-center.html">CUSTOMER CENTER</a></li>
-            <li><a href="notice.html">NOTICE</a></li>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="live-casino.html">리이브 카지노</a></li>
+            <li><a href="slot.html">슬롯</a></li>
+            <li><a href="deposit.html">입금신청</a></li>
+            <li><a href="withdraw.html">출금신청</a></li>
+            <li><a href="customer-center.html">고객센터</a></li>
+            <li><a href="notice.html">공지사항</a></li>
           </ul>
           <div class="header-btn-wrapper">
-            <a href="./sign-in.html">Sign In</a>
-            <a href="./sign-up.html" class="has-wrapper">Sign Up</a>
+            <a href="./sign-in.html">로그인</a>
+            <a href="./sign-up.html" class="has-wrapper">회원가입</a>
           </div>
         </div>
         <div class="page-title-wrapper">
           <div class="page-title">
-            <h1>Wallet</h1>
+            <h1>보유머니</h1>
           </div>
           <div class="wallet-header-container">
-            <p>Wallet <span>39,607,644 원</span></p>
-            <p>In game <span>39,607,644 원</span></p>
-            <p>Note <span>(0)</span></p>
+            <p>보유머니 <span>39,607,644 원</span></p>
+            <p>카지노 <span>39,607,644 원</span></p>
+            <p>쪽지 <span>(0)</span></p>
           </div>
         </div>
       </div>
 
-      <!-- Faq Section Starts Here -->
-      <section class="faq-section-wrapper">
-        <div class="faq-title">
+      <!-- wallet Section Starts Here -->
+      <section class="wallet-section-wrapper">
+        <div class="wallet-title">
           <span class="left-line"></span>
-          <h2>Your notice</h2>
+          <h2>보유머니 WALLET</h2>
           <span class="right-line"></span>
         </div>
-
-        <!-- <div class="faq-content-wrapper">
-          <div class="col-lg-12">
-            <div class="faq-item">
-              <div class="faq-item__title">
-                <span>12/02/2023</span>
-                <h5 class="title">New Open Event Deadline</h5>
-
+        <div class="wallet-wrapper">
+          <div class="user-info-container">
+            <div>
+              <img src="./assets/images/wallet/user-avartar-new.png" alt="user avatar" />
+            </div>
+            <h3>Cameron Williamson</h3>
+            <button>Log Out</button>
+          </div>
+          <div class="wallet-container">
+            <div class="title-wallet-container">
+              <h4>보유머니</h4>
+              <p>4,123,000 원</p>
+            </div>
+            <div class="wallet-btn-container">
+              <a href="./deposit.html">입금</a>
+              <a href="./withdraw.html">출금</a>
+            </div>
+          </div>
+          <div class="wallet-game-container">
+            <div class="casino-container">
+              <div class="title-wallet-container">
+                <h4>라이브카지노</h4>
+                <p>123,000 원</p>
               </div>
-              <div class="faq-item__content">
-                <p>
-                  This is a detail notice of your Deposit account inquiry.
-                  Information on completion of emergency maintenance. This is a
-                  detail notice of your Deposit account inquiry. Information on
-                  completion of emergency maintenance
-                </p>
+              <div class="wallet-btn-container">
+                <a href="./deposit.html">입금</a>
+                <a href="./withdraw.html">출금</a>
               </div>
             </div>
-            <div class="faq-item">
-              <div class="faq-item__title">
-                <span>12/02/2023</span>
-                <h5 class="title">New Open Event Deadline</h5>
+            <div class="slot-container">
+              <div class="title-wallet-container">
+                <h4>슬롯</h4>
+                <p>14,000 원</p>
               </div>
-              <div class="faq-item__content">
-                <p>
-                  This is a detail notice of your Deposit account inquiry.
-                  Information on completion of emergency maintenance. This is a
-                  detail notice of your Deposit account inquiry. Information on
-                  completion of emergency maintenance
-                </p>
+              <div class="wallet-btn-container">
+                <a href="./deposit.html">입금</a>
+                <a href="./withdraw.html">출금</a>
               </div>
             </div>
           </div>
-        </div> -->
-        <div>
-          <img src="./assets/images/footer/footer_image_left_side.png" alt="">
+          <div class="notion-container">
+            <ul>
+              <li>모든 게임은 각 게임에 맞는 머니로 전환 후 이용 가능합니다.</li>
+              <li>각 게임머니에서, 일반머니(Wallet)로 전환 후 환전 신청 이 가능합니다</li>
+            </ul>
+          </div>
         </div>
       </section>
-      <!-- Faq Section Ends Here -->
+      <!-- wallet Section Ends Here -->
 
       <!-- Footer Section Starts Here -->
+      <div style="position: absolute; left: 0; bottom: 160px;">
+        <img src="./assets/images/deposit.png" alt="">
+      </div>
+
       <footer class="footer-section-wrapper">
         <div class="logo">
           <a href="index.html"

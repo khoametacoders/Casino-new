@@ -628,9 +628,9 @@ textarea.form--control {
   height: 15px;
   width: 15px;
   cursor: pointer;
+  background: #fff;
   border-radius: 3px;
   display: inline-block;
-  background-color: transparent;
   position: relative;
 }
 .form--check input[type=checkbox]::after {
@@ -640,9 +640,9 @@ textarea.form--control {
   font-family: "Font Awesome 5 Free";
   content: "\f00c";
   font-size: 10px;
-  color: #f82f77;
+  color: #fff;
   visibility: hidden;
-  background-color: white;
+  background: #FFC827;
   line-height: 1;
   border-radius: 3px;
   width: 15px;
@@ -1971,7 +1971,7 @@ i {
   height: 100%;
   left: 0;
   top: 0;
-  background: #27074a;
+  background: #2e0327;
   opacity: 0.9;
 }
 .footer-section .container {
@@ -3773,7 +3773,6 @@ div[class*=col]:nth-child(even) > .faq-item {
   align-items: center;
   -moz-column-gap: 24px;
        column-gap: 24px;
-  padding: 0 47px;
   margin-bottom: 16px;
 }
 .faq-section-wrapper .faq-title span.left-line {

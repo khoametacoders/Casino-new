@@ -1,0 +1,156 @@
+.wallet-page-wrapper .wallet-section-wrapper {
+  max-width: 775px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.wallet-page-wrapper .wallet-section-wrapper .wallet-title {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-bottom: 16px;
+}
+.wallet-page-wrapper .wallet-section-wrapper .wallet-title span.left-line {
+  flex: 1 0;
+  height: 8px;
+  background: linear-gradient(90deg, #F82F77 0%, rgba(248, 47, 119, 0) 100%);
+  transform: rotate(180deg);
+}
+.wallet-page-wrapper .wallet-section-wrapper .wallet-title span.right-line {
+  flex: 1 0;
+  height: 8px;
+  background: linear-gradient(90deg, #F82F77 0%, rgba(248, 47, 119, 0) 100%);
+}
+.wallet-page-wrapper .wallet-section-wrapper .wallet-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #F82F77;
+  margin-top: 0;
+}
+.wallet-page-wrapper .wallet-wrapper {
+  margin: 0 32.5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.wallet-page-wrapper .wallet-wrapper .user-info-container {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  border-radius: 999px;
+  border: 1px solid #F82F77;
+  background: linear-gradient(0deg, rgba(248, 47, 119, 0.1), rgba(248, 47, 119, 0.1));
+}
+.wallet-page-wrapper .wallet-wrapper .user-info-container h3 {
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.wallet-page-wrapper .wallet-wrapper .user-info-container button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #FFFFFF;
+  padding: 13px 24px;
+  background: #F82F77;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+.wallet-page-wrapper .wallet-wrapper .user-info-container button:focus {
+  border: none;
+  outline: none;
+}
+.wallet-page-wrapper .wallet-wrapper .title-wallet-container h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0;
+}
+.wallet-page-wrapper .wallet-wrapper .title-wallet-container p {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  color: #F82F77;
+}
+.wallet-page-wrapper .wallet-wrapper .wallet-container {
+  display: flex;
+  height: 204px;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+  background: url("./../images/wallet/wallet-card.png");
+}
+.wallet-page-wrapper .wallet-wrapper .wallet-container .wallet-btn-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.wallet-page-wrapper .wallet-wrapper .wallet-container .wallet-btn-container a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFFFFF;
+  background: linear-gradient(0deg, rgba(248, 47, 119, 0.2), rgba(248, 47, 119, 0.2));
+}
+.wallet-page-wrapper .wallet-wrapper .wallet-game-container {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.wallet-page-wrapper .wallet-wrapper .wallet-game-container div.casino-container, .wallet-page-wrapper .wallet-wrapper .wallet-game-container div.slot-container {
+  flex: 1 0;
+  padding: 24px;
+  border: 1px solid #F82F77;
+  background: linear-gradient(0deg, #1F0718, #1F0718) linear-gradient(0deg, #F82F77, #F82F77);
+  border-radius: 6px;
+}
+.wallet-page-wrapper .wallet-wrapper .wallet-game-container div.casino-container .wallet-btn-container, .wallet-page-wrapper .wallet-wrapper .wallet-game-container div.slot-container .wallet-btn-container {
+  margin-top: 40px;
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.wallet-page-wrapper .wallet-wrapper .wallet-game-container div.casino-container .wallet-btn-container a, .wallet-page-wrapper .wallet-wrapper .wallet-game-container div.slot-container .wallet-btn-container a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #F82F77;
+  color: #F82F77;
+}
+.wallet-page-wrapper .wallet-wrapper .notion-container {
+  padding: 16px;
+  background: linear-gradient(0deg, rgba(248, 47, 119, 0.2), rgba(248, 47, 119, 0.2));
+  border: 1px solid #F82F77;
+  border-radius: 10px;
+}
+.wallet-page-wrapper .wallet-wrapper .notion-container ul {
+  margin: 0;
+}
+.wallet-page-wrapper .wallet-wrapper .notion-container ul li {
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style-type: circle;
+  list-style-position: inside;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}/*# sourceMappingURL=wallet.css.map */
