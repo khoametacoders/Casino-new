@@ -223,6 +223,22 @@ $('.faq-item__title').on('click', function (e) {
   }
 });
 
+// new Faq
+$('.faq-item-wrapper__title').on('click', function (e) {
+  var element = $(this).parent('.faq-item-wrapper');
+  if (element.hasClass('open')) {
+    element.removeClass('open');
+    element.find('.faq-item-wrapper__content').removeClass('open');
+    element.find('.faq-item-wrapper__content').slideUp(300, "swing");
+  } else {
+    element.addClass('open');
+    element.children('.faq-item-wrapper__content').slideDown(300, "swing");
+    element.siblings('.faq-item-wrapper').children('.faq-item-wrapper__content').slideUp(300, "swing");
+    element.siblings('.faq-item-wrapper').removeClass('open');
+    element.siblings('.faq-item-wrapper').find('.faq-item-wrapper__content').slideUp(300, "swing");
+  }
+});
+
 
 $('.user-thumb').on('click', function() {
   $('.dashboard__sidebar').addClass('active')
