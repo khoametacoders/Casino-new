@@ -1490,7 +1490,12 @@ i {
 
 @media (max-width: 1399px) {
   .banner-section {
-    padding: 150px 0px 50px;
+    padding: 160px 0 180px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-section {
+    padding: 160px 0 190px;
   }
 }
 

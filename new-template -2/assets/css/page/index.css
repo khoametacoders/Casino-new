@@ -1,3 +1,42 @@
+.banner-content-live {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  width: fit-content;
+}
+
+@media (max-width: 1399px) {
+  .banner-content-live {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-content-live {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-content-live {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner-content-live {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 .banner-section .bg-1 {
   position: absolute;
   top: -100px;
@@ -92,7 +131,47 @@
     rgba(39, 7, 74, 0) 46.17%
   );
 }
+.main-text-banner {
+  width: 100%;
+}
+.img-you-win {
+  width: 100%;
+}
+@media (max-width: 1399px) {
+  .main-text-banner {
+    width: 80%;
+  }
+  .img-you-win {
+    width: 80%;
+  }
+}
 
+@media (max-width: 1199px) {
+  .main-text-banner {
+    width: 70%;
+  }
+  .img-you-win {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-text-banner {
+    width: 50%;
+  }
+  .img-you-win {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-text-banner {
+    width: 40%;
+  }
+  .img-you-win {
+    width: 500%;
+  }
+}
 /* SECTION Experience */
 .section-experience {
   position: relative;
@@ -100,6 +179,26 @@
   left: 0;
   z-index: 1;
   margin-top: -90px;
+  padding-bottom: 50px;
+  height: 480px;
+}
+
+@media (max-width: 1199px) {
+  .section-experience {
+    height: 45vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-experience {
+    height: 50vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-experience {
+    width: 100%;
+  }
 }
 .experience-text-container {
   position: relative;
@@ -204,9 +303,32 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 480px;
+  height: 100%;
   position: relative;
 }
+/* @media (max-width: 1399px) {
+  .experience-game-container {
+    height: 36vw;
+  }
+}
+
+@media (max-width: 1199px) {
+  .experience-game-container {
+    height: 25vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .experience-game-container {
+    height: 25vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .experience-game-container {
+    height: 25vw;
+  }
+} */
 
 .experience-container-image {
   position: absolute;
