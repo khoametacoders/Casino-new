@@ -1,3 +1,42 @@
+.banner-content-live {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  width: fit-content;
+}
+
+@media (max-width: 1399px) {
+  .banner-content-live {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner-content-live {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-content-live {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .banner-content-live {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 .banner-section .bg-1 {
   position: absolute;
   top: -100px;
@@ -92,32 +131,113 @@
     rgba(39, 7, 74, 0) 46.17%
   );
 }
+.main-text-banner {
+  width: 100%;
+}
+.img-you-win {
+  width: 100%;
+}
+@media (max-width: 1399px) {
+  .main-text-banner {
+    width: 80%;
+  }
+  .img-you-win {
+    width: 80%;
+  }
+}
 
+@media (max-width: 1199px) {
+  .main-text-banner {
+    width: 70%;
+  }
+  .img-you-win {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-text-banner {
+    width: 50%;
+  }
+  .img-you-win {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-text-banner {
+    width: 40%;
+  }
+  .img-you-win {
+    width: 500%;
+  }
+}
 /* SECTION Experience */
 .section-experience {
   position: relative;
   top: 0;
   left: 0;
   z-index: 1;
-  margin-top: -115px;
-  background-image: url(../../images/banner/bg-game.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-top: -90px;
+  padding-bottom: 50px;
+  height: 480px;
+}
+
+@media (max-width: 1199px) {
+  .section-experience {
+    height: 45vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-experience {
+    height: 50vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-experience {
+    width: 100%;
+  }
 }
 .experience-text-container {
   position: relative;
-  width: 1272px;
+  width: 100%;
   height: 70px;
-  top: 30px;
+  top: 0;
 }
 
 .bg-experience {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   opacity: 0.8;
   z-index: 1;
 }
+@media (max-width: 1399px) {
+  .bg-experience {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .bg-experience {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg-experience {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .bg-experience {
+    width: 100%;
+  }
+}
+
 .experience-items {
   position: absolute;
   top: 50%;
@@ -128,21 +248,23 @@
   padding-left: 110px;
   padding-right: 110px;
 }
+
 .pink-bar-left {
-  width: 240px;
+  width: 40%;
   height: 8px;
   transform: rotate(180deg);
   background: -o-linear-gradient(left, #f82f77 0%, rgba(248, 47, 119, 0) 100%);
   background: linear-gradient(90deg, #f82f77 0%, rgba(248, 47, 119, 0) 100%);
 }
 .pink-bar-right {
-  width: 240px;
+  width: 40%;
   height: 8px;
   background: -o-linear-gradient(left, #f82f77 0%, rgba(248, 47, 119, 0) 100%);
   background: linear-gradient(90deg, #f82f77 0%, rgba(248, 47, 119, 0) 100%);
 }
 
 .text-experience {
+  display: inline-block;
   font-family: "Inter", sans-serif;
   font-size: 38px;
   font-weight: 700;
@@ -150,20 +272,178 @@
   letter-spacing: 0.05em;
   text-align: center;
   color: #ffffff;
+  width: 100%;
+}
+@media (max-width: 1399px) {
+  .text-experience {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .text-experience {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-experience {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .text-experience {
+    font-size: 16px;
+  }
 }
 
 .experience-game-container {
-  /* background-image: url(../../images/banner/bg-game.png);
+  background-image: url(../../images/banner/bg-game.png);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   width: 100%;
-  height: 480px;
+  height: 100%;
   position: relative;
 }
+/* @media (max-width: 1399px) {
+  .experience-game-container {
+    height: 36vw;
+  }
+}
+
+@media (max-width: 1199px) {
+  .experience-game-container {
+    height: 25vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .experience-game-container {
+    height: 25vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .experience-game-container {
+    height: 25vw;
+  }
+} */
 
 .experience-container-image {
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
+}
+
+.container-game-casino {
+  position: relative;
+  width: 50%;
+  height: 320px;
+  top: 0;
+  left: 0;
+}
+.img-bg-casino {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.bg-casino-character {
+  position: absolute;
+  bottom: 20px;
+  right: -45px;
+}
+.bg-casino-2-character {
+  position: absolute;
+  top: 5px;
+  left: -45px;
+}
+
+.text-game-casino {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1399px) {
+  .container-game-casino {
+    height: 280px;
+  }
+  .bg-casino-character {
+    width: 55%;
+  }
+  .bg-casino-2-character {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container-game-casino {
+    height: 230px;
+  }
+  .bg-casino-character {
+    width: 55%;
+  }
+  .bg-casino-2-character {
+    width: 60%;
+  }
+  .img-text-casino-kr {
+    width: 60%;
+  }
+  .img-text-casino {
+    width: 60%;
+  }
+}
+
+.container-game-slot {
+  position: relative;
+  width: 50%;
+  height: 320px;
+  top: 0;
+  left: 0;
+}
+
+.img-bg-slot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.bg-slot-character {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.bg-slot-2-character {
+  position: absolute;
+  top: -5px;
+  left: 20px;
+}
+
+@media (max-width: 1399px) {
+  .container-game-slot {
+    height: 280px;
+  }
+  .bg-slot-character {
+    width: 35%;
+  }
+  .bg-slot-2-character {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container-game-slot {
+    height: 230px;
+  }
+  .bg-slot-character {
+    width: 35%;
+  }
+  .bg-slot-2-character {
+    width: 40%;
+  }
 }
